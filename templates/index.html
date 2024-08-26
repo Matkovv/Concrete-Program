@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betoniarnia</title>
 </head>
-<body>
+<body><center>
+    <br>
+    <br>
+    <br>
+    <br>
     <h1>Wybierz rodzaj betonu</h1>
     <form method="POST">
+        <br>
         <label for="beton">Rodzaj betonu:</label>
         <select name="beton" id="beton" required>
             {% for key, value in rodzaje_betonu.items() %}
@@ -16,13 +21,15 @@
         </select>
 
         <br>
+        <br>
 
         <label for="ilosc">Ile m3 betonu chcesz wyprodukować?</label>
         <input type="number" name="ilosc" id="ilosc" required>
 
         <br>
+        <br>
 
         <button type="submit">Wyprodukuj beton</button>
     </form>
-</body>
+</center></body>
 </html>

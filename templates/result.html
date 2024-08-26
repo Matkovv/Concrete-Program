@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wyniki</title>
 </head>
-<body>
+<body><center>
     <h1>Wyniki produkcji betonu</h1>
     <p>Wybrano: {{ beton }}</p>
     <p>Ilość betonu: {{ ilosc }} m<sup>3</sup></p>
@@ -13,13 +13,13 @@
     <p>Produkcja betonu zakończy się: {{ termin_produkcji.strftime('%Y-%m-%d') }}</p>
     <p>Proponowany termin transportu betonu: {{ termin_transportu.strftime('%Y-%m-%d') }}</p>
 
-    <h2>Dostępne pojazdy do transportu:</h2>
+    <center><h2>Dostępne pojazdy do transportu:</h2>
     <ul>
         <li>Dwa samochody 3,5 m<sup>3</sup></li>
         <li>Jeden samochód 6 m<sup>3</sup></li>
         <li>Jedna pompogruszka</li>
-    </ul>
+    </center></ul>
 
     <a href="/">Powrót</a>
-</body>
+</center></body>
 </html>
